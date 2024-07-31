@@ -1,0 +1,14 @@
+- Pas de balise title >>> ok
+- Pas de balise description >>> ok
+- Pas de balises robots
+- Pas de balise header >>> ok
+- Pas de titre h1 le plus haut possible et mot clé
+- Balises h2 avec mot clé >>> ok (revoir mot clé)
+- Pour les paragraphes : balises strong et br
+- Pas de footer >>> ok
+- Pas de structuration en balise article et balises sections et aside, tout est en DIV >>> ok
+- Les photos trop lourdes ? les mettre dans le css pour les plus lourdes
+- Le js doit s'afficher en dernier, defer ?
+- Remplir les alt >>> ok
+- Langue fr  >>> ok
+- mots clé : photographe professionnel, Ile de France, trouver, évènements...
