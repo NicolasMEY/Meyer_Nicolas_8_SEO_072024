@@ -8,6 +8,29 @@
       name="description"
       content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Services de shooting photo, retouches et albums photos en Île-de-France."
     />
+    <meta name="business:contact_data:country_name" content="France">
+    <meta name="business:contact_data:email" content="ninacarducci@gmail.com">
+    <meta name="business:contact_data:phone_number" content="+33 5 56 67 78 89">
+    <meta name="business:contact_data:website" content="https://www.ninacarducci.com">
+    <meta name="business:contact_data:region" content="Nouvelle-Aquitaine">
+    <meta name="business:contact_data:locality" content="Bordeaux">
+    <meta name="business:contact_data:postal_code" content="33200">
+    <meta name="business:contact_data:street_address" content="68 avenue Alsace-Lorraine">
+    <!-- Ajout des balises Open Graph pour optimiser le partage du site web sur Facebook et LinkedIn. -->
+    <meta property="og:title" content="Nina Carducci - Photographe Professionnelle">
+    <meta property="og:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Services de shooting photo, retouches et albums photos en Île-de-France.">
+    <meta property="og:image" content="https://www.ninacarducci.com/assets/images/nina.png">
+    <meta property="og:url" content="https://www.ninacarducci.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <!-- Ajout des balises Twitter Card pour optimiser le partage du site web sur Twitter. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nina Carducci - Photographe Professionnelle">
+    <meta name="twitter:description" content="Découvrez le portfolio de Nina Carducci, photographe professionnelle. Services de shooting photo, retouches et albums photos en Île-de-France.">
+    <meta name="twitter:image" content="https://www.ninacarducci.com/assets/images/nina.png">
+    <meta name="twitter:url" content="https://www.ninacarducci.com">
+
+
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" />
     <link rel="stylesheet" href="./assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -305,6 +328,16 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+    <script>
+      fetch('assets/json/localBusiness.jsonld')
+        .then(response => response.json())
+        .then(data => {
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.text = JSON.stringify(data);
+          document.head.appendChild(script);
+        });
+    </script>
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
   </body>
