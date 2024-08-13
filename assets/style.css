@@ -394,6 +394,15 @@ input[type="submit"] {
   margin: 10px 0;
 }
 
+#footer p a {
+  color: #000; /* Noir */
+}
+
+#footer p a:hover {
+  color: #333; /* Couleur légèrement plus claire au survol */
+  text-decoration: underline; /* Ajoute le soulignement au survol */
+}
+
 .footer__links ul {
   list-style-type: none;
   padding: 0;
